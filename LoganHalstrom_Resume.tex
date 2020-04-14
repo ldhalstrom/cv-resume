@@ -48,9 +48,13 @@
 \bibliographystyle{unsrtnat}
 % \setcitestyle{authoryear,open={((},close={))}}
 
-% change default 3rd bullet from * to square
+% change default 2nd bullet from * to square
 \usepackage{amssymb}
-\renewcommand{\labelitemiii}{\tiny $\blacksquare$}
+\renewcommand{\labelitemii}{\tiny $\blacksquare$}
+
+\renewcommand{\labelitemiii}{\normalfont \bfseries \textendash}
+
+
 
 % indentsection style, used for sections that aren't already in lists
 % that need indentation to the level of all text in the document
@@ -127,7 +131,7 @@
           {\textbf{Davis, CA}}
           \\
           \headerrow
-          {\emph{Ph.D. Mechanical and Aerospace Engineering}}
+          {\emph{Ph.D. Mechanical and Aerospace Engineering} (GPA: 3.86)}
           % {\emph{Sep 2013 -- Sep 2020}}
           {\emph{\DatestampYMD{2013}{09}{15} -- \DatestampYMD{2020}{09}{15}} }
           \begin{itemize*}
@@ -136,26 +140,13 @@
           \end{itemize*}
 
           \headerrow
-          {\emph{M.S. Mechanical and Aerospace Engineering}}
-          {\emph{2013-2016}}
-          \begin{itemize}
-              \item Real-time performance feedback for the manual control of spacecraft
-              \begin{itemize}
-                \item test
-              \end{itemize}
-          \end{itemize}
-
-    \item
-          \headerrow
-          {\textbf{University of California, Santa Cruz}}
-          {\textbf{Santa Cruz, CA}}
-          \\
-          \headerrow
-          {\emph{B.S. Physics}}
-          {\emph{2008-2012}}
+          {\emph{B.S. Aerospace Engineering and B.S. Mechanical Engineering} (GPA: 3.72)}
+          % {\emph{Sep 2013 -- Sep 2020}}
+          {\emph{\DatestampYMD{2013}{06}{15}} }
           \begin{itemize*}
-              \item High-energy astroparticle physics with the Fermi Gamma-ray Telescope
+              \item Graduated with College Honors
           \end{itemize*}
+
 \end{itemize}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -169,20 +160,63 @@
 \begin{itemize}
     \parskip=0.1em
 
+    %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
     \item
-          \headerrow
-          {\textbf{NASA Ames Research Center}}
-          {\textbf{NASA Ames Research Center, Moffett Field, CA}}
-          \\
-          \headerrow
-          {\emph{NASA Pathways Intern}}
-          {\emph{August 2017 -- Current}} % 8/2017 - Current
-          \begin{itemize*}
-              \item Human factors and human performance within the Human Systems Integration Division
-              \item Teleoperator performance modeling
-              \item Development and design of Playbook scheduling tool
-              \item Software development with python, Unity, node, and C\#
-          \end{itemize*}
+        \headerrow
+        {\textbf{Johnson Space Center, National Aeronautics and Space Administration}}
+        {\textbf{Houston, TX}}
+        \\
+        %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+        \headerrow
+        {\emph{NASA Pathways Intern}, Applied Aeroscience and CFD Branch (EG3)}
+        {\emph{\DatestampYMD{2014}{06}{15} -- Present}}
+
+        \begin{itemize*}
+            \item \textbf{Responsibilities:}
+            \begin{itemize*}
+                \item Designed and analyzed crewed spacecraft using Computational Fluid Dynamics simulation techniques
+                \item Created computational grids for modeling complex geometries and aerodynamic phenomena
+                \item Generated informative visual representations and animations of aerodynamic flow solutions
+            \end{itemize*}
+
+            \item \textbf{CFD Simulation and Analysis Projects:}
+            \begin{itemize*}
+                \item Simulated oscillatory motion and aerodynamics of crew reentry vehicle parachutes
+                \item Simulated dynamic loading of wind tunnel walls due to blockage from moving parachute
+                \item Simulated crew capsule separation during launch abort and analyzed unsteady proximity aerodynamics
+            \end{itemize*}
+
+            \item \textbf{Aerodynamics Projects:}
+            \begin{itemize*}
+                \item Developed a genetic algorithm for optimizing the Orion Flush Air Data System (FADS) sensor array
+                \item Developed a general-use FADS trajectory reconstruction algorithm
+                \item Performed transonic stability analysis for RED-Data2 re-entry heating probe
+            \end{itemize*}
+            \item \textbf{Supervisors:} Ben Kirk, Steve Labbe
+        \end{itemize*}
+
+        %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+        \headerrow
+        {\emph{USRA Intern}, Aircraft Operations Division (CC3)}
+        {\emph{\DatestampYMD{2013}{07}{08} -- \DatestampYMD{2013}{09}{13}}}
+
+        \begin{itemize*}
+            \item \textbf{Responsibilities:}
+            \begin{itemize*}
+                \item Developed and executed flight experiments
+                \item Managed aircraft operations logistics and scheduling
+                \item Gained and maintained familiarity with aircraft and piloting systems
+            \end{itemize*}
+
+            \item \textbf{Projects:}
+            \begin{itemize*}
+                \item Designed and conducted a pitot-static calibration flight test for the WB-57 aircraft
+                \item Performed experimental validation of GPS ground speed based pitot-static calibration technique
+                \item Assisted with Reduced Gravity Operations safety inspections
+            \end{itemize*}
+
+            \item \textbf{Supervisors:} Son Nguyen, Gregory Johnson
+        \end{itemize*}
 
     \item
           \headerrow
