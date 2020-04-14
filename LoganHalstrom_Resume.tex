@@ -1,4 +1,9 @@
-\documentclass[10pt,letterpaper]{article}
+% \documentclass[10pt,letterpaper]{article}
+
+\documentclass[letterpaper,MMMyyyy,nonstop]{simpleresumecv}
+% Class options:
+% a4paper, letterpaper, draft, nonstop
+% MMMyyyy, ddMMMyyyy, MMMMyyyy, ddMMMMyyyy, yyyyMMdd, yyyyMM, yyyy
 
 % CV Info (to be customized).
 \newcommand{\CVAuthor}{Logan Halstrom}
@@ -24,13 +29,12 @@
 
 
 
-\usepackage[letterpaper,margin=0.75in]{geometry}
+% \usepackage[letterpaper,MMMyyyy,margin=0.75in]{geometry}
 \usepackage[utf8]{inputenc}
 \usepackage{mdwlist}
-\usepackage[T1]{fontenc}
 \usepackage{textcomp}
 \usepackage{tgpagella}
-\pagestyle{empty}
+% \pagestyle{empty}
 \setlength{\tabcolsep}{0em}
 
 \usepackage{hyperref}
@@ -43,6 +47,10 @@
 \usepackage{natbib}
 \bibliographystyle{unsrtnat}
 % \setcitestyle{authoryear,open={((},close={))}}
+
+% change default 3rd bullet from * to square
+\usepackage{amssymb}
+\renewcommand{\labelitemiii}{\tiny $\blacksquare$}
 
 % indentsection style, used for sections that aren't already in lists
 % that need indentation to the level of all text in the document
@@ -79,6 +87,10 @@
     \if@filesw\immediate\write\@auxout{\string \bibcite {#1}{\the\value{\@listctr }}}\fi\ignorespaces}
 \makeatletter
 
+
+
+
+
 % and the actual content starts here
 \begin{document}
 
@@ -104,7 +116,7 @@
 
 \hrule
 \vspace{-0.4em}
-\subsection*{Education}
+\subsection*{EDUCATION}
 
 \begin{itemize}
     \parskip=0.1em
@@ -116,17 +128,22 @@
           \\
           \headerrow
           {\emph{Ph.D. Mechanical and Aerospace Engineering}}
-          {\emph{2016 -- Current}}
+          % {\emph{Sep 2013 -- Sep 2020}}
+          {\emph{\DatestampYMD{2013}{09}{15} -- \DatestampYMD{2020}{09}{15}} }
           \begin{itemize*}
-              \item Human systems integration and control theory
+              \item Thesis: {Computational Fluid Dynamics Simulation and Validation of Parachute Pendulum Motion}
+              \item Advisor: Dr. Stephen Robinson
           \end{itemize*}
 
           \headerrow
           {\emph{M.S. Mechanical and Aerospace Engineering}}
           {\emph{2013-2016}}
-          \begin{itemize*}
+          \begin{itemize}
               \item Real-time performance feedback for the manual control of spacecraft
-          \end{itemize*}
+              \begin{itemize}
+                \item test
+              \end{itemize}
+          \end{itemize}
 
     \item
           \headerrow
@@ -141,9 +158,13 @@
           \end{itemize*}
 \end{itemize}
 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% WORK EXPERIENCE %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
 \hrule
 \vspace{-0.4em}
-\subsection*{Experience}
+\subsection*{EXPERIENCE}
 
 \begin{itemize}
     \parskip=0.1em
@@ -231,7 +252,7 @@
           {\emph{Content Administrator}}
           {\emph{2011 -- 2012}} % 11/2011 - 12/2012
           \begin{itemize*}
-              \item Curated and published a library of over 2,000 creative commons and open source textbooks for free use (over 2 million views as of January 2017, see \url{https://archive.org/details/opensource_textbooks})
+              \item Curated and published a library of over 2,000 creative commons and open source textbooks for free use (over 2 million views as of January 2017 (see \url{https://archive.org/details/opensource_textbooks})
               \item Assisted with the design, creation, and quality assurance of both the mobile and web applications
               \item Selected science, technology, engineering, and mathematics (STEM) textbooks for use with Android \\ education application
               \item Effectively managed small teams of 3-7 people to complete various start up projects
@@ -260,7 +281,9 @@
 \end{itemize}
 
 
-
+% %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% %% PUBLICATIONS %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 % % \clearpage
 % \hrule
@@ -272,11 +295,19 @@
 % \bibliography{publications}
 
 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% PROFESSIONAL AFFILIATIONS & ACTIVITIES %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% SKILLS %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 
 \hrule
 \vspace{-0.4em}
-\subsection*{Core Technical Skills}
+\subsection*{SKILLS}
 
 \begin{indentsection}{\parindent}
     \hyphenpenalty=1000
@@ -289,6 +320,50 @@
         Linux, macOS, Windows, Android, iOS
     \end{description*}
 \end{indentsection}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% AWARDS & SCHOLARSHIPS %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+
+
+% %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% %% LANGUAGES %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+% \section
+% {Languages}
+% {Languages}
+% {PDF:Languages}
+
+% \BulletItem
+% English: Native language
+
+% \GapNoBreak
+% \BulletItem
+% Spanish: Basic (speaking, reading, writing)
+
+% \GapNoBreak
+% \BulletItem
+% Russian: Basic (speaking, reading, writing)
+
+% %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% %% INTERESTS %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+% \section
+% {Interests}
+% {Interests}
+% {PDF:Interests}
+
+% Backpacking,
+% running,
+% cooking,
+% gardening,
+% digital photography,
+% acoustic guitar,
+% aviation
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
