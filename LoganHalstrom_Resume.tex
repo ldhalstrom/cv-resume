@@ -17,6 +17,11 @@
 % \newcommand{\CVAddressStreet}{Department of Mechanical and Aerospace Engineering}
 % \newcommand{\CVAddressCity}{One Shields Avenue, Davis, CA 95616}
 
+%hyperlink variables
+\newcommand\hrvip{Center for Human/Robotics/Vehicle Integration and Performance}
+\newcommand\hrviplink{\href{https://hrvip.ucdavis.edu/}{Center for Human/Robotics/Vehicle Integration and Performance}}
+\newcommand\UCDavis{University of California, Davis}
+\newcommand\UCDavislink{\href{http://mae.ucdavis.edu/}{University of California, Davis}}
 
 
 
@@ -38,10 +43,10 @@
 \setlength{\tabcolsep}{0em}
 
 \usepackage{hyperref}
-\hypersetup{
-    colorlinks=true,
-    urlcolor=blue,
-}
+% \hypersetup{
+%     colorlinks=true,
+%     urlcolor=blue,
+% }
 
 \usepackage{doi}
 \usepackage{natbib}
@@ -136,7 +141,7 @@
           {\emph{\DatestampYMD{2013}{09}{15} -- \DatestampYMD{2020}{09}{15}} }
           \begin{itemize*}
               \item Thesis: {Computational Fluid Dynamics Simulation and Validation of Parachute Pendulum Motion}
-              \item Advisor: Dr. Stephen Robinson
+              \item Advisor: Dr. Stephen K. Robinson
           \end{itemize*}
 
           \headerrow
@@ -218,100 +223,53 @@
             \item \textbf{Supervisors:} Son Nguyen, Gregory Johnson
         \end{itemize*}
 
+    %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
     \item
-          \headerrow
-          {\textbf{UC Davis Center for Human/Robotics/Vehicle Integration and Performance}}
-          {\textbf{Davis, CA}}
-          \\
-          \headerrow
-          {\emph{Graduate Student Researcher}}
-          {\emph{2013 -- Current}} % 11/13 - Current
-          \begin{itemize*}
-              \item Development and validation of methods to assess task performance in real-time and provide immediate feedback to improve mission outcomes for spaceflight operations
-              \item Customized refresher and just-in-time training for long-duration spaceflight crews
-              \item Simulation development for the analysis of human performance and human-automation interaction
-              \item Multiple human subject research campaigns
-              \item Computer-vision techniques for autonomous spacecraft rendezvous and docking
-              \item Optimal control theory for spacecraft attitude pointing
-          \end{itemize*}
+        \headerrow
+        {\textbf{\UCDavislink}}
+        {\textbf{Davis, CA}}
+        \\
+        %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+        \headerrow
+        {\emph{Graduate Student Researcher}, \hrviplink}
+        {\emph{\DatestampYMD{2013}{09}{020} -- Present}}
+        \begin{itemize*}
+            \item \textbf{Research:}
+            \begin{itemize*}
+                \item Performed CFD simulations of rigid-geometry parachute motion and resulting unsteady aerodynamics
+                \item Validated and calibrated simulations by comparison to wind tunnel test
+                \item Leveraged simulation for insight into root cause of dynamic instability of fully-deployed parachutes
+            \end{itemize*}
+            \item \textbf{Principal Investigator:} Dr. Stephen K. Robinson
+        \end{itemize*}
 
-    \item
-          \headerrow
-          {\textbf{San José State University Research Foundation}}
-          {\textbf{NASA Ames Research Center, Moffett Field, CA}}
-          \\
-          \headerrow
-          {\emph{Research Intern}}
-          {\emph{June -- September 2016, June -- August 2017}} % 6/2016 - 9/2016
-          \begin{itemize*}
-              \item Designed and built a prototype of a mobile procedure viewer with the goals of reducing execution time, training time, and procedure execution errors for astronauts on the International Space Station
-              \item Directed design interns on prototyping, usability testing, analysis and feasibility tasks
-              \item Mentored software development interns learning Arduino, node, and Unity to accomplish tasks
-              \item Integrated HoloLens augmented reality display and ESP8266 hardware through a MQTT broker
-              \item Software development with Unity, node, and \CPP
-          \end{itemize*}
+        %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+        \headerrow
+        {\emph{Teaching Assistant}, Department of Mechanical and Aerospace Engineering}
+        {\emph{\DatestampYMD{2013}{09}{020} -- Present}}
+        \begin{itemize*}
+            \item \textbf{Responsibilities:}
+            \begin{itemize*}
+                \item Updated coursework to reflect modern industry concepts and techniques
+                \item Held weekly lectures and office hours and fielded student questions about subject matter
+                \item Graded exams and project reports and managed special circumstances for students
+            \end{itemize*}
+            \item \textbf{Courses:}
+            \begin{itemize*}
+                \item \emph{Applied Aerodynamics}:
+                        {\small Compressible/Transonic flow, viscous effects and boundary layer theory, finite wings, aircraft equilibrium, panel methods}
+                \item \emph{Computational Aerodynamics}:
+                        {\small 2D finite difference Euler methods, transonic small-disturbance theory}
+                \item \emph{Stability and Control of Aerospace Vehicles}:
+                        {\small State-space representation, longitudinal and lateral stability}
+                \item \emph{Rocket Propulsion}:
+                        {\small Fluid and thermodynamics of liquid and solid rocket engines}
+            \end{itemize*}
+            \item \textbf{Supervisors:} Dr. Stephen K. Robinson, Dr. Mohamed Hafez, Dr. Ron Hess, and Dr. Jean-Pierre Delplanque
 
-    \item
-          \headerrow
-          {\textbf{Foodfully, Inc.}}
-          {\textbf{Davis, CA}}
-          \\
-          \headerrow
-          {\emph{Lead Software Developer}}
-          {\emph{2015-2018}} % 10/2015 - 1/2018?
-          \begin{itemize*}
-              \item Development of web, iOS, and Android mobile apps to reduce household food waste
-              \item Full-stack software development in Javascript, Meteor, MongoDB, and React
-          \end{itemize*}
+        \end{itemize*}
 
-    \item
-          \headerrow
-          {\textbf{Teachers Curriculum Institute}}
-          {\textbf{Mountain View, CA}}
-          \\
-          \headerrow
-          {\emph{Software Developer}}
-          {\emph{2013-2015}} % 4/2013 - 1/2015
-          \begin{itemize*}
-              \item Development of interactive science curriculum, comprehensive educational suite, and online store
-              \item Software development in JavaScript, HTML5, and Ruby on Rails
-          \end{itemize*}
 
-    \item
-          \headerrow
-          {\textbf{Handstand Inc.}}
-          {\textbf{Mountain View, CA}}
-          \\
-          \headerrow
-          {\emph{Content Administrator}}
-          {\emph{2011 -- 2012}} % 11/2011 - 12/2012
-          \begin{itemize*}
-              \item Curated and published a library of over 2,000 creative commons and open source textbooks for free use (over 2 million views as of January 2017 (see \url{https://archive.org/details/opensource_textbooks})
-              \item Assisted with the design, creation, and quality assurance of both the mobile and web applications
-              \item Selected science, technology, engineering, and mathematics (STEM) textbooks for use with Android \\ education application
-              \item Effectively managed small teams of 3-7 people to complete various start up projects
-          \end{itemize*}
-
-          % \clearpage
-    \item
-          \headerrow
-          {\textbf{University of California, Santa Cruz}}
-          {\textbf{Santa Cruz, CA}}
-          \\
-          \headerrow
-          {\emph{Undergraduate Student Researcher}}
-          {\emph{2010 -- 2012}} % 6/2016 - 6/2012
-          \begin{itemize*}
-              \item Search for `smoking gun' signatures of dark matter in the galactic center
-              \item High energy gamma-ray timing analyses with the Fermi Gamma Ray Telescope
-          \end{itemize*}
-          \headerrow
-          {\emph{Junior Specialist}}
-          {\emph{2009 -- 2010, Balloon Campaigns 2011-13}} % 11/2009 - 03/2013
-          \begin{itemize*}
-              \item Computer-aided testing and evaluation of hardware and software for use on both test and final BARREL (Balloon Array for RBSP Relativistic Electron Losses) balloon campaigns
-              \item Monitored data acquisition and performance of balloons during multiple campaigns to determine the electron loss rate during RBSP relativistic electron events
-          \end{itemize*}
 \end{itemize}
 
 
