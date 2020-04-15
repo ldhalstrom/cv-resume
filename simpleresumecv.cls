@@ -13,8 +13,19 @@
 \NeedsTeXFormat{LaTeX2e}
 \ProvidesClass{simpleresumecv}[2016/01/23 Simple Resume CV https://github.com/zachscrivena/simple-resume-cv]
 
-\DeclareOption{a4paper}{\PassOptionsToClass{\CurrentOption}{article}}
-\DeclareOption{letterpaper}{\PassOptionsToClass{\CurrentOption}{article}}
+%INPUT OPTIONS (OLD)
+% \DeclareOption{a4paper}{\PassOptionsToClass{\CurrentOption}{article}}
+% \DeclareOption{letterpaper}{\PassOptionsToClass{\CurrentOption}{article}}
+
+%INPUT OPTIONS (NEW)
+\DeclareOption{a4paper}{\PassOptionsToClass{\CurrentOption}{extarticle}}
+\DeclareOption{letterpaper}{\PassOptionsToClass{\CurrentOption}{extarticle}}
+\DeclareOption{8pt}{\PassOptionsToClass{\CurrentOption}{extarticle}}
+\DeclareOption{9pt}{\PassOptionsToClass{\CurrentOption}{extarticle}}
+\DeclareOption{10pt}{\PassOptionsToClass{\CurrentOption}{extarticle}}
+\DeclareOption{11pt}{\PassOptionsToClass{\CurrentOption}{extarticle}}
+\DeclareOption{12pt}{\PassOptionsToClass{\CurrentOption}{extarticle}}
+\DeclareOption{14pt}{\PassOptionsToClass{\CurrentOption}{extarticle}}
 
 % Draft mode.
 \newcommand{\TypesetInDraftMode}{0}
@@ -77,8 +88,8 @@
 \ProcessOptions\relax
 
 % Use article class as the base class.
-\LoadClass[10pt,oneside]{article}
-% \LoadClass[oneside]{article}
+% \LoadClass[10pt,oneside]{article}
+\LoadClass[oneside]{extarticle}
 
 % % Geometry package for page margins (ORIGINAL).
 % \RequirePackage[
@@ -211,24 +222,25 @@ includefoot]{geometry}
 
 
 
-% % % ORIGINAL Font styles.
-% % \newcommand{\UseHeadingFont}{\normalfont}
-% % \newcommand{\UseHeaderFooterFont}{\UseHeadingFont\fontsize{8.2pt}{9.5pt}\selectfont}
-% % \newcommand{\UseNoteFont}{\UseHeadingFont\fontsize{8pt}{9.6pt}\selectfont}
-% % \newcommand{\UseTitleFont}{\UseHeadingFont\fontsize{28pt}{33.6pt}\selectfont\bfseries}
-% % \newcommand{\UseSubTitleFont}{\normalfont\fontsize{8.6pt}{10.3pt}\selectfont}
-% % \newcommand{\UseSectionFont}{\UseHeadingFont\fontsize{9pt}{11pt}\selectfont\bfseries}
-% % \newcommand{\UseSubSectionFont}{\UseHeadingFont\fontsize{8.6pt}{10.3pt}\selectfont\bfseries}
-% % \newcommand{\UseDetailFont}{\normalfont\fontsize{8.6pt}{10.3pt}\selectfont}
-% % NEW Font styles.
+% % ORIGINAL Font styles.
 % \newcommand{\UseHeadingFont}{\normalfont}
-% \newcommand{\UseHeaderFooterFont}{\UseHeadingFont\fontsize{9.2pt}{10.5pt}\selectfont}
-% \newcommand{\UseNoteFont}{\UseHeadingFont\fontsize{9pt}{10.6pt}\selectfont}
+% \newcommand{\UseHeaderFooterFont}{\UseHeadingFont\fontsize{8.2pt}{9.5pt}\selectfont}
+% \newcommand{\UseNoteFont}{\UseHeadingFont\fontsize{8pt}{9.6pt}\selectfont}
 % \newcommand{\UseTitleFont}{\UseHeadingFont\fontsize{28pt}{33.6pt}\selectfont\bfseries}
-% \newcommand{\UseSubTitleFont}{\normalfont\fontsize{9.6pt}{11.3pt}\selectfont}
-% \newcommand{\UseSectionFont}{\UseHeadingFont\fontsize{10pt}{12pt}\selectfont\bfseries}
-% \newcommand{\UseSubSectionFont}{\UseHeadingFont\fontsize{9.6pt}{11.3pt}\selectfont\bfseries}
-% \newcommand{\UseDetailFont}{\normalfont\fontsize{9.6pt}{11.3pt}\selectfont}
+% \newcommand{\UseSubTitleFont}{\normalfont\fontsize{8.6pt}{10.3pt}\selectfont}
+% \newcommand{\UseSectionFont}{\UseHeadingFont\fontsize{9pt}{11pt}\selectfont\bfseries}
+% \newcommand{\UseSubSectionFont}{\UseHeadingFont\fontsize{8.6pt}{10.3pt}\selectfont\bfseries}
+% \newcommand{\UseDetailFont}{\normalfont\fontsize{8.6pt}{10.3pt}\selectfont}
+
+% % % NEW Font styles.
+% % \newcommand{\UseHeadingFont}{\normalfont}
+% % \newcommand{\UseHeaderFooterFont}{\UseHeadingFont\fontsize{9.2pt}{10.5pt}\selectfont}
+% % \newcommand{\UseNoteFont}{\UseHeadingFont\fontsize{9pt}{10.6pt}\selectfont}
+% % \newcommand{\UseTitleFont}{\UseHeadingFont\fontsize{28pt}{33.6pt}\selectfont\bfseries}
+% % \newcommand{\UseSubTitleFont}{\normalfont\fontsize{9.6pt}{11.3pt}\selectfont}
+% % \newcommand{\UseSectionFont}{\UseHeadingFont\fontsize{10pt}{12pt}\selectfont\bfseries}
+% % \newcommand{\UseSubSectionFont}{\UseHeadingFont\fontsize{9.6pt}{11.3pt}\selectfont\bfseries}
+% % \newcommand{\UseDetailFont}{\normalfont\fontsize{9.6pt}{11.3pt}\selectfont}
 
 
 

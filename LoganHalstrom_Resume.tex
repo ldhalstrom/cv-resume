@@ -1,7 +1,8 @@
 % \documentclass[10pt,letterpaper]{article}
 
-\documentclass[letterpaper,MMMyyyy,nonstop]{simpleresumecv}
+\documentclass[10pt,letterpaper,MMMyyyy,nonstop]{simpleresumecv}
 % Class options:
+% 8pt, 9pt, 10pt, 11pt, 12pt, 14pt
 % a4paper, letterpaper, draft, nonstop
 % MMMyyyy, ddMMMyyyy, MMMMyyyy, ddMMMMyyyy, yyyyMMdd, yyyyMM, yyyy
 
@@ -12,7 +13,7 @@
 \newcommand{\CVWebpage}{https://github.com/lhalstro}
 \newcommand{\CVEmail}{loganhalstrom@gmail.com}
 \newcommand{\CVPhone}{(530) 965-0755}
-\newcommand{\CVAddressStreet}{225 Evandale Avenue}
+\newcommand{\CVAddressStreet}{444 Tyrella Avenue}
 \newcommand{\CVAddressCity}{Mountain View, CA 94043}
 % \newcommand{\CVAddressStreet}{Department of Mechanical and Aerospace Engineering}
 % \newcommand{\CVAddressCity}{One Shields Avenue, Davis, CA 95616}
@@ -26,11 +27,11 @@
 % \newcommand\aiaaucdlink\href{https://www.aiaa.org/}{American Institute of Aeronautics and Astronautics}
 
 
-% % \renewcommand\familydefault{\sfdefault}
-% \usepackage[T1]{fontenc}
-% \usepackage{tinos} %use tinos font
-% % \usepackage[scaled]{helvet} %use helvetica font
 
+\usepackage[T1]{fontenc}
+\usepackage{tinos} %use tinos font
+% \usepackage[scaled]{helvet} %use helvetica font
+% \usepackage{tgpagella}
 
 
 
@@ -38,7 +39,7 @@
 \usepackage[utf8]{inputenc}
 \usepackage{mdwlist}
 \usepackage{textcomp}
-\usepackage{tgpagella}
+
 % \pagestyle{empty}
 \setlength{\tabcolsep}{0em}
 
@@ -52,6 +53,7 @@
 \usepackage{natbib}
 \bibliographystyle{unsrtnat}
 % \setcitestyle{authoryear,open={((},close={))}}
+
 
 % change default 2nd bullet from * to square
 \usepackage{amssymb}
@@ -137,7 +139,6 @@
           \\
           \headerrow
           {\emph{Ph.D. Mechanical and Aerospace Engineering} (GPA: 3.86)}
-          % {\emph{Sep 2013 -- Sep 2020}}
           {\emph{\DatestampYMD{2013}{09}{15} -- \DatestampYMD{2020}{09}{15}} }
           \begin{itemize*}
               \item Thesis: {Computational Fluid Dynamics Simulation and Validation of Parachute Pendulum Motion}
@@ -147,7 +148,7 @@
           \headerrow
           {\emph{B.S. Aerospace Engineering and B.S. Mechanical Engineering} (GPA: 3.72)}
           % {\emph{Sep 2013 -- Sep 2020}}
-          {\emph{\DatestampYMD{2013}{06}{15}} }
+          {\emph{\DatestampYMD{2008}{09}{15} -- \DatestampYMD{2013}{06}{15}} }
           \begin{itemize*}
               \item Graduated with College Honors
           \end{itemize*}
@@ -182,7 +183,7 @@
                 \item Designed and analyzed crewed spacecraft using Computational Fluid Dynamics simulation techniques
                 \item Performed risk analysis and verification and validation oversight of aerospace vehicle design %extra detail*********************
                 % \item Created computational grids for modeling complex geometries and aerodynamic phenomena
-                \item Created computational grids for modeling complex geometries validated through sensitivity studies
+                \item Created computational grids and performed sensitivity studies for modeling complex geometries
                 \item Generated informative visual representations and animations of aerodynamic flow solutions
             \end{itemize*}
 
