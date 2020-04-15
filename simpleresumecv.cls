@@ -77,7 +77,7 @@
 \ProcessOptions\relax
 
 % Use article class as the base class.
-\LoadClass[10pt,oneside]{article}
+\LoadClass[oneside]{article}
 
 % % Geometry package for page margins (ORIGINAL).
 % \RequirePackage[
