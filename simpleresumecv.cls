@@ -77,7 +77,8 @@
 \ProcessOptions\relax
 
 % Use article class as the base class.
-\LoadClass[oneside]{article}
+\LoadClass[10pt,oneside]{article}
+% \LoadClass[oneside]{article}
 
 % % Geometry package for page margins (ORIGINAL).
 % \RequirePackage[
@@ -88,11 +89,19 @@
 % nohead,
 % includefoot]{geometry}
 
-% Geometry package for page margins (NEW).
 \RequirePackage[
-margin=0.75in,
+left=0.70in,
+right=0.70in,
+top=0.60in,
+bottom=0.50in,
 nohead,
 includefoot]{geometry}
+
+% % Geometry package for page margins (NEW).
+% \RequirePackage[
+% margin=0.75in,
+% nohead,
+% includefoot]{geometry}
 
 % PDF settings and properties.
 \RequirePackage{hyperref}
@@ -171,7 +180,7 @@ includefoot]{geometry}
 % % and can be downloaded for free at <http://www.fontsquirrel.com/fonts/tinos>.
 % % Symbol table: <http://www.fileformat.info/info/unicode/font/tinos/grid.htm>
 % \setmainfont
-% [Path=./Fonts/Tinos/,
+% [Path=./OldStyle/Fonts/Tinos/,
 % ItalicFont=Tinos-Italic,
 % BoldFont=Tinos-Bold,
 % BoldItalicFont=Tinos-BoldItalic]
@@ -182,7 +191,7 @@ includefoot]{geometry}
 % % GNU General Public License Version 3, and can be downloaded
 % % for free at <https://savannah.gnu.org/projects/freefont/>.
 % \newcommand{\UseSecondaryFont}{\fontspec
-% [Path=./Fonts/GNUFreeFont/,
+% [Path=./OldStyle/Fonts/GNUFreeFont/,
 % ItalicFont=FreeSerifItalic,
 % BoldFont=FreeSerifBold,
 % BoldItalicFont=FreeSerifBoldItalic]
@@ -197,6 +206,10 @@ includefoot]{geometry}
 % % Small caps font: Changed to "Tinos".
 % \renewcommand{\scshape}{\rmfamily}
 % %\renewcommand{\textsc}[1]{\textbf{\MakeUppercase{#1}}}
+
+
+
+
 
 % % % ORIGINAL Font styles.
 % % \newcommand{\UseHeadingFont}{\normalfont}
@@ -353,6 +366,7 @@ includefoot]{geometry}
 
 % % Macro: Hide.
 % \newcommand{\Hide}[1]{}
+
 
 % End of class file.
 \endinput
